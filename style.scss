@@ -1,0 +1,369 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #849974;
+}
+button {
+	cursor: pointer;
+}
+h1 {
+	font-size: 100px;
+}
+@media screen and (max-width: 992px) {
+  h1 {
+	font-size: 75px;
+}
+}
+@media screen and (max-width: 767px) {
+  h1 {
+	font-size: 60px;
+}
+}
+@media screen and (max-width: 576px) {
+  h1 {
+	font-size: 45px;
+}
+}
+@media screen and (max-width: 480px) {
+  h1 {
+	font-size: 35px;
+}
+}
+h2 {
+	font-size: 75px;
+}
+h5 {
+	font-size: 30px;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+body, html {
+  height: 100%;
+  margin: 0;
+}
+// FONTS
+@font-face {
+	font-family: 'MelindaScript';
+	src:  url('./assets/webfontkit-20190803-141616/melinda_script-webfont.woff2') format('woff2'),
+	url('./assets/webfontkit-20190803-141616/melinda_script-webfont.woff') format('woff');
+}
+.melindascriptfont {
+	font-family: 'MelindaScript';
+}
+@font-face {
+	font-family: 'Inkland';
+	src:  url('./assets/webfontkit-20190804-062203/inkland-webfont.woff2') format('woff2'),
+	url('./assets/webfontkit-20190804-062203/inkland-webfont.woff') format('woff');
+}
+.inkland {
+	font-family: 'Inkland';
+}
+@font-face {
+	font-family: 'Ayudisha';
+	src:  url('./assets/webfontkit-20190804-072601/ayudisha-free-version-webfont.woff2') format('woff2'),
+	url('./assets/webfontkit-20190804-072601/ayudisha-free-version-webfont.woff') format('woff');
+}
+.ayudisha {
+	font-family: 'Ayudisha';
+}
+@font-face {
+	font-family: 'AsmelinaHarley';
+	src:  url('./assets/webfontkit-20190804-073533/asmelinaharley-webfont.woff2') format('woff2'),
+	url('./assets/webfontkit-20190804-073533/asmelinaharley-webfont.woff') format('woff');
+}
+.asmelinaharley {
+	font-family: 'AsmelinaHarley';
+}
+@font-face {
+	font-family: 'clarissa';
+	src:  url('./assets/webfontkit-20190804-080731/clarissa-webfont.woff2') format('woff2'),
+	url('./assets/webfontkit-20190804-080731/clarissa-webfont.woff') format('woff');
+}
+.clarissa {
+	font-family: 'clarissa';
+}
+//END OF FONTS
+
+//others
+.container-fluid {
+    width: 100%;
+    /* padding-right: 15px; */
+    /* padding-left: 15px; */
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0;
+}
+.center {
+	text-align: center;
+}
+.right {
+	text-align: right;
+}
+.left {
+	text-align: left;
+}
+.petal {
+	color: #E3BAB3;
+}
+.cream {
+	color: #E9DCCD;
+}
+.burgundy {
+	color: #613A43;
+}
+.fresh {
+	color: #849974;
+}
+.charcoal {
+	color: #36384C;
+}
+.nudepink {
+	color: #E9CECE;
+}
+.bold {
+	font-weight: bold;
+}
+.bolder {
+	font-weight: bolder;
+}
+.break-word {
+	word-break: break-word;
+}
+
+//end
+
+//SOCIAL MEDIA ICON BARS
+.icon-bar {
+	position: fixed;
+	top: 31%;
+	right: 0;
+	z-index: 5;
+}
+.icon-bar a {
+	display: block;
+	text-align: center;
+	padding: 18px;
+	transition: all 0.3s ease;
+	background-color: #E3BAB3;
+	font-size: 20px;
+	border-radius: 50%;
+	margin: 7px;
+	opacity: 0.5;
+}
+
+.icon-bar a:hover {
+	background-color: #E3BAB3;
+	opacity: 1;
+}
+.fa-facebook-f:before {
+	content: "\f39e";
+	color: #3B5998;
+}
+.fa-instagram:before {
+	content: "\f16d";
+	color: #f09433;
+}
+.fa-google:before {
+	content: "\f1a0";
+	color: #dd4b39;
+}
+.fa-linkedin:before {
+	content: "\f0e1";
+	color: #007bb5;
+}
+//END OF ICON BARS
+
+//BUTTONS
+.btn-pink {
+	background-color: #849974;
+	color: #613A43;
+	border-radius: 3px;
+	border-color: #613A43;
+}
+.fa-down {
+	color: #849974;
+	padding: 50px;
+	font-size: 100px;
+}
+.fas {
+	cursor: pointer;
+}
+//END OF BUTTONS
+
+//FIRST SECTION
+
+.firstparallax {
+  /* The image used */
+  background-image: url("assets/bg1.jpg");
+
+  /* Set a specific height */
+  min-height: 730px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.9;
+  position: relative;
+}
+.firstsection {
+  /* Set a specific height */
+  min-height: 650px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.9;
+}
+.headerbg {
+	position: absolute;
+	background-color: #E9DCCD;
+	text-align: center;
+	top: 25%;
+	bottom: 40%;
+	left: 0;
+	right: 0;
+	opacity: 0.4;
+}
+.headertitle {
+	position: absolute;
+	text-align: center;
+	top: 33%;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 15px;
+}
+.arrow-down {
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 15px;
+}
+
+//END OF FIRST SECTION
+
+//SECOND SECTION
+
+.secondparallax {
+  /* The image used */
+  background-image: url("assets/bg2.jpg");
+
+  /* Set a specific height */
+  min-height: 660px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.9;
+  position: relative;
+  padding: 20px;
+}
+.secondsection {
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.9;
+  padding: 30px;
+}
+div.transparentborder {
+	display: block;
+	border: 5px solid rgba(255, 255, 255, .5);
+	height: 300px;
+	width: 300px;
+	border-radius: 50%;
+	margin: auto;
+}
+img.profileimg1 {
+	display: block;
+	border-radius: 50%;
+	height: 280px;
+	width: 280px;
+	margin: auto;
+	margin-top: 5px;
+}
+img.profileimg2 {
+	display: block;
+	border-radius: 50%;
+	height: 280px;
+	width: 280px;
+	margin: auto;
+	margin-top: 5px;
+}
+.flip-box-back {
+	transform: rotateY(180deg);
+}
+.flip-box {
+	display: block;
+	margin: auto;;
+	background-color: transparent;
+	width: 280px;
+	height: 280px;
+	-webkit-perspective: 1000;
+	-moz-perspective: 1000;
+	-o-perspective: 1000;
+	border-radius: 50%;
+}
+.flip-box:hover .flip-box-inner {
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-o-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+
+.flip-box-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	-webkit-transition: 0.6s;
+	-webkit-transform-style: preserve-3d;
+
+	-moz-transition: 0.6s;
+	-moz-transform-style: preserve-3d;
+
+	-o-transition: 0.6s;
+	-o-transform-style: preserve-3d;
+
+	transition: 0.6s;
+	transform-style: preserve-3d;
+}
+.flip-box-front, .flip-box-back {
+	position: absolute;
+	border-radius: 50%;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+}
+.profiledetailsbg {
+    background-color: #E9CECE;
+    text-align: center;
+    opacity: 0.8;
+    padding: 20px;
+    margin: auto;
+    width: 40%;
+    margin-top: 5%;
+}
+
+//END OF SECOND SECTION

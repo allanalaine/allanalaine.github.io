@@ -1,9 +1,101 @@
 <!DOCTYPE html>
 <html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
-	<title></title>
+	<title>Hi, Ali~</title>
+	<link rel="stylesheet/scss" type="text/css" href="style.scss">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/sass.js/0.6.3/sass.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		(async () => {
+			const compiled = (await Promise.all(
+				[...document.querySelectorAll("link")]
+				.filter(l => l.rel === 'stylesheet/scss')
+				.map(async l => {
+					url = l.href;
+					const code = await (await fetch(url)).text();
+					const basename = url.substring(url.lastIndexOf("/")+1);
+					Sass.writeFile(basename, code);
+					return Sass.compile(`@import "${basename}"; `);
+				})
+				)).join("\n");
+			document.head.innerHTML += `<style>${compiled}</style>`;
+			console.log(compiled);
+		})();
+	</script>
+	<script>
+		$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+      	scrollTop: $(hash).offset().top
+      }, 700, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
 </head>
 <body>
- <h3>Hello RM!</h3>
+	<div class="container-fluid">
+		<div class="firstsection">
+			<div class="firstparallax"></div>
+			<div class="icon-bar">
+				<a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a> 
+				<a href="#" class="instagram"><i class="fab fa-instagram"></i></a> 
+				<a href="#" class="google"><i class="fab fa-google"></i></a> 
+				<a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a> 
+			</div>
+			<div class="headerbg"></div>
+			<div class="headertitle">
+				<h1 class="asmelinaharley bolder">Allana is going places.</h1>
+			</div>
+			<div class="arrow-down">
+				<a href="#section2" class="fa-down fas fa-angle-double-down mt-5"></a>
+			</div>
+		</div>
+		<div id="section2" class="secondsection">
+			<h1 class="center ayudisha bold" style="padding: 25px;">About Me</h1>
+			<div class="secondparallax">
+				<div class="transparentborder">
+					<div class="flip-box">
+						<div class="flip-box-inner">
+							<div class="flip-box-front">
+								<img class="profileimg1" src="assets/alyana.jpeg" alt="Allana Laine De Jesus">
+							</div>
+							<div class="flip-box-back">
+								<img class="profileimg2" src="assets/me.jpeg" alt="Allana Laine De Jesus">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="profiledetailsbg break-word">
+					<h4>Allana Laine De Jesus</h4>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
