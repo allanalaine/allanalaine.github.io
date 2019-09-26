@@ -32,7 +32,7 @@ h1 {
 }
 }
 h2 {
-	font-size: 75px;
+	font-size: 33px;
 }
 h5 {
 	font-size: 30px;
@@ -49,6 +49,38 @@ body, html {
   height: 100%;
   margin: 0;
 }
+img {
+  width: 100% !important;
+  height: auto !important;
+}
+div.polaroid {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+p.about {
+    font-size: 3rem;
+}
+@media screen and (max-width: 992px) {
+  p.about {
+	font-size: 2rem;
+}
+}
+@media screen and (max-width: 767px) {
+  p.about {
+	font-size: 1.5rem;
+}
+}
+@media screen and (max-width: 576px) {
+  p.about {
+	font-size: 2rem;
+}
+}
+@media screen and (max-width: 480px) {
+  p.about {
+	font-size: 2rem;
+}
+}
+
 // FONTS
 @font-face {
 	font-family: 'MelindaScript';
@@ -128,6 +160,9 @@ body, html {
 .nudepink {
 	color: #E9CECE;
 }
+.leaf-green {
+	color: #3F5B0B;
+}
 .bold {
 	font-weight: bold;
 }
@@ -136,6 +171,13 @@ body, html {
 }
 .break-word {
 	word-break: break-word;
+}
+.italic {
+  font-style: italic;
+}
+
+.oblique {
+  font-style: oblique;
 }
 
 //end
@@ -154,8 +196,8 @@ body, html {
 	transition: all 0.3s ease;
 	background-color: #E3BAB3;
 	font-size: 20px;
-	border-radius: 50%;
-	margin: 7px;
+	// border-radius: 50%;
+	// margin: 7px;
 	opacity: 0.5;
 }
 
@@ -264,7 +306,7 @@ body, html {
   background-image: url("assets/bg2.jpg");
 
   /* Set a specific height */
-  min-height: 660px; 
+  min-height: 100%; 
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -273,7 +315,7 @@ body, html {
   background-size: cover;
   opacity: 0.9;
   position: relative;
-  padding: 20px;
+  padding: 8%;
 }
 .secondsection {
   /* Set a specific height */
@@ -289,81 +331,9 @@ body, html {
 }
 div.transparentborder {
 	display: block;
-	border: 5px solid rgba(255, 255, 255, .5);
-	height: 300px;
-	width: 300px;
-	border-radius: 50%;
-	margin: auto;
-}
-img.profileimg1 {
-	display: block;
-	border-radius: 50%;
-	height: 280px;
-	width: 280px;
-	margin: auto;
-	margin-top: 5px;
-}
-img.profileimg2 {
-	display: block;
-	border-radius: 50%;
-	height: 280px;
-	width: 280px;
-	margin: auto;
-	margin-top: 5px;
-}
-.flip-box-back {
-	transform: rotateY(180deg);
-}
-.flip-box {
-	display: block;
-	margin: auto;;
-	background-color: transparent;
-	width: 280px;
-	height: 280px;
-	-webkit-perspective: 1000;
-	-moz-perspective: 1000;
-	-o-perspective: 1000;
-	border-radius: 50%;
-}
-.flip-box:hover .flip-box-inner {
-	-webkit-transform: rotateY(180deg);
-	-moz-transform: rotateY(180deg);
-	-o-transform: rotateY(180deg);
-	transform: rotateY(180deg);
-}
-
-.flip-box-inner {
-	position: relative;
-	width: 100%;
+	border: 8px solid rgba(255, 255, 255, .5);
 	height: 100%;
-	border-radius: 50%;
-	-webkit-transition: 0.6s;
-	-webkit-transform-style: preserve-3d;
-
-	-moz-transition: 0.6s;
-	-moz-transform-style: preserve-3d;
-
-	-o-transition: 0.6s;
-	-o-transform-style: preserve-3d;
-
-	transition: 0.6s;
-	transform-style: preserve-3d;
-}
-.flip-box-front, .flip-box-back {
-	position: absolute;
-	border-radius: 50%;
-	-webkit-backface-visibility: hidden;
-	-moz-backface-visibility: hidden;
-	-o-backface-visibility: hidden;
-}
-.profiledetailsbg {
-    background-color: #E9CECE;
-    text-align: center;
-    opacity: 0.8;
-    padding: 20px;
-    margin: auto;
-    width: 40%;
-    margin-top: 5%;
+	padding: 40px;
 }
 
 //END OF SECOND SECTION
